@@ -1,0 +1,97 @@
+.admin {
+    .start {
+        margin-top: 54px;
+
+        &__top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            column-gap: 40px;
+            row-gap: 33px;
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 200px;
+                height: 200px;
+                box-sizing: border-box;
+                padding: 33px 30px;
+                text-align: center;
+                border-radius: 25px;
+                background: #F5F5F5;
+                font-family: Roboto;
+                font-size: 16px;
+                color: #000;
+                transition: .2s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #ccc;
+                }
+
+                img {
+                    width: 65px;
+                }
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .admin {
+        .start {
+            &__top {
+                flex-wrap: nowrap;
+                gap: 20px;
+
+                &-item {
+                    flex-shrink: 0;
+                    width: 170px;
+                    height: 155px;
+                    padding: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .admin {
+        .start {
+            &__top {
+                &-item {
+                    width: 135px;
+                    height: 125px;
+                    font-size: 12px;
+
+                    img {
+                        width: 65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admin {
+        .start {
+            &__top {
+                gap: 5px;
+                
+                &-item {
+                    width: 120px;
+                    height: 120px;
+                    font-size: 10px;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
